@@ -34,9 +34,9 @@ echo -e $TEXT_YELLOW
 echo 'SNAP update finished...'
 echo -e $TEXT_RESET
 
-sudo flatpack update
+sudo flatpak update
 echo -e $TEXT_YELLOW
-echo 'FLATPACK update finished...'
+echo 'FLATPAK update finished...'
 echo -e $TEXT_RESET
 
 if [ -f /var/run/reboot-required ]; then
