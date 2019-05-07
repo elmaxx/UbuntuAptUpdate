@@ -39,6 +39,16 @@ echo -e $TEXT_YELLOW
 echo 'FLATPAK update finished...'
 echo -e $TEXT_RESET
 
+sudo fwupdmgr refresh
+echo -e $TEXT_YELLOW
+echo 'fwupdmgr refresh finished...'
+echo -e $TEXT_RESET
+
+sudo fwupdmgr update
+echo -e $TEXT_YELLOW
+echo 'fwupdmgr update finished...'
+echo -e $TEXT_RESET
+
 if [ -f /var/run/reboot-required ]; then
     echo -e $TEXT_RED_B
     echo 'Reboot required!'
